@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codeboardio/mantra"
+    "url": "git://github.com/codeboardio/mantra.git"
   },
   "dependencies": {
     "express": "4.13.1",
