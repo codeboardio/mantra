@@ -1,0 +1,1 @@
+import p1.*; import p2.*; public class Application { public static void main(String[] args) {B b = new B(); D d = new D(); E e = new E();   System.out.println("Hello Java Test-3 "); }}

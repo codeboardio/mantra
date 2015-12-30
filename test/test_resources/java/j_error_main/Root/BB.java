@@ -1,0 +1,1 @@
+public class BB { public BB() {D c = new D(); System.out.println("Hello BB"); }}

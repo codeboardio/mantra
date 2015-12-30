@@ -1,0 +1,1 @@
+public class MyUnit { public MyUnit() {System.out.println("Hello MyUnit"); } public String concatenate(String one, String two){  return one + two; } }

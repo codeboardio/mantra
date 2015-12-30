@@ -1,0 +1,54 @@
+{
+  "name": "codeboard_mantra",
+  "version": "0.1.0",
+  "description": "Web service for compiling and running programs. Part of the codeboard.io project.",
+  "contributors": [
+    {
+      "name": "H.-Christian Estler",
+      "email": "christian@codeboard.io"
+    },
+    {
+      "name": "Martin Nordio",
+      "email": "martin@codeboard.io"
+    }
+  ],
+  "scripts": {
+    "start": "node ./server/server.js",
+    "deploy": "NODE_ENV=production node ./server/server.js",
+    "test": "NODE_ENV=test mocha ./test/docker/* ./test/languages/*.js ./test/*.js",
+    "testFunctional": "NODE_ENV=test mocha ./test/languages/functional_test/*.js",
+    "testFunctionalC": "NODE_ENV=test mocha ./test/languages/functional_test/testFunctionalC.js",
+    "testFunctionalCpp": "NODE_ENV=test mocha ./test/languages/functional_test/testFunctionalCpp.js",
+    "testFunctionalHaskell": "NODE_ENV=test mocha ./test/languages/functional_test/testFunctionalHaskell.js",
+    "testFunctionalHaskell-hspec": "NODE_ENV=test mocha ./test/languages/functional_test/testFunctionalHaskell-hspec.js",
+    "testFunctionalJava": "NODE_ENV=test mocha ./test/languages/functional_test/testFunctionalJava.js",
+    "testFunctionalJava-junit": "NODE_ENV=test mocha ./test/languages/functional_test/testFunctionalJava-junit.js",
+    "testFunctionalPython": "NODE_ENV=test mocha ./test/languages/functional_test/testFunctionalPython.js",
+    "testFunctionalPython-unittest": "NODE_ENV=test mocha ./test/languages/functional_test/testFunctionalPython-unittest.js",
+    "testFunctionalZ_unsupportedLanguages": "NODE_ENV=test mocha ./test/languages/functional_test/testFunctionalZ_unsupportedLanguages.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeboardio/mantra"
+  },
+  "dependencies": {
+    "express": "4.13.1",
+    "http-proxy": "1.11.1",
+    "body-parser": "1.13.3",
+    "mkdirp": "0.5.0",
+    "bluebird": "2.9.34",
+    "request":"2.61.0",
+    "winston": "1.0.1",
+    "websocket": "1.0.21",
+    "lodash": "3.10.1"
+  },
+  "devDependencies": {
+    "mocha": "2.2.5",
+    "should": "7.0.1",
+    "supertest": "1.0.1"
+  },
+  "engines": {
+    "node": ">= 0.12.x"
+  },
+  "license": "MIT"
+}

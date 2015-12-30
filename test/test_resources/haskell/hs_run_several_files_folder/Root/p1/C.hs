@@ -1,0 +1,1 @@
+module Root.P1.C (bar) where bar = do putStrLn "Hello P1.C"

@@ -1,0 +1,1 @@
+public class B { public B() {C c = new C(); System.out.println("Hello B"); } public int plus(int one, int two){  return one + two; }}

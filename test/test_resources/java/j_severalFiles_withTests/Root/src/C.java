@@ -1,0 +1,1 @@
+public class C { public C() {System.out.println("Hello C"); } public int times(int one, int two){  return one * two; }}

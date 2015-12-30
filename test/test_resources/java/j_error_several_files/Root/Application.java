@@ -1,0 +1,1 @@
+public class Application { public static void main(String[] args) {B b = new B(); System.out.println("Hello Java Test-2 "); }}

@@ -1,0 +1,1 @@
+module B (foo) where foo = do putStrLn "Hello B"
